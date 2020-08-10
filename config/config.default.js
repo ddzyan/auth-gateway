@@ -13,7 +13,7 @@ module.exports = appInfo => {
   const config = exports = {};
 
   // use for cookie sign key, should change to your own and keep security
-  config.keys = 'foo';
+  config.keys = appInfo.name + 'foo';
 
   config.passportGithub = {
     key: 'e3fe9c5fa43d66a0087f',
