@@ -14,8 +14,12 @@ egg 框架中完成 OAuth 认证流程，实现第三方登录，并且获取第
 
 ### 使用
 
+请先修改 config/config.default.js 中 sequelize 的数据库配置，并且在 mysql 中先创建好 egg_auth 数数据库，然后运行 sql 文件夹下的所有文件，创建基础表结构
+
 ```
 npm install
+
+npm run db
 
 npm run debug
 ```
