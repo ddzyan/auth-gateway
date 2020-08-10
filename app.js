@@ -6,6 +6,7 @@ const assert = require('assert');
 module.exports = app => {
   // 鉴权
   app.passport.verify(async (ctx, user) => {
+    console.log('step1');
     assert(user.provider, 'user.provider should exists');
     assert(user.id, 'user.id should exists');
 
@@ -24,12 +25,14 @@ module.exports = app => {
 
   // 将用户序列化后再存储到会话中
   app.passport.serializeUser(async (ctx, user) => {
+    console.log('step2');
     const { id, uuid, name, nickname, role_id } = user;
     return { id, uuid, name, nickname, role_id };
   });
 
   // 从会话还原后反序列化用户
   app.passport.deserializeUser(async (ctx, user) => {
+    console.log('step3');
     if (user) {
       const userRes = await ctx.model.User.findOne({
         where: {

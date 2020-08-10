@@ -1,33 +1,13 @@
-# auth-gateway
+## 简介
 
-UIMS
+egg 框架中实现 OAuth 认证流程
 
-## QuickStart
+用户第一次进行第三方登录时，需要经历的流程：
 
-<!-- add docs here for user -->
+1. 跳转第三方授权页面，授权成功返回 code
+2. 后端根据 code ，向第三方获取用户信息
+3. 验证用户信息，实现接口鉴权
+4. 将用户信息保存到 session
+5. 接口中如果要使用用户信息，再从 session 中获取用户 ID，再到数据库中查询完整信息。
 
-see [egg docs][egg] for more detail.
-
-### Development
-
-```bash
-$ npm i
-$ npm run dev
-$ open http://localhost:7001/
-```
-
-### Deploy
-
-```bash
-$ npm start
-$ npm stop
-```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
+用户第二次登录，则直接从第 5 步开始

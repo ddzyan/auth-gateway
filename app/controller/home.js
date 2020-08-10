@@ -22,9 +22,7 @@ class HomeController extends Controller {
           <h2>${ctx.path}</h2>
           <hr>
           Login with
-          <a href="/passport/weibo">Weibo</a> | <a href="/passport/github">Github</a> |
-          <a href="/passport/bitbucket">Bitbucket</a> | <a href="/passport/twitter">Twitter</a> |
-          <a href="/passport/yuque">YuQue 语雀</a>
+          <a href="/passport/github">Github</a> | <a href="/passport/yuque">YuQue 语雀</a> | <a href="/login">账号密码登录</a>
           <hr>
           <a href="/">Home</a> | <a href="/user">User</a>
         </div>
