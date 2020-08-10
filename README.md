@@ -11,3 +11,13 @@ egg 框架中完成 OAuth 认证流程，实现第三方登录，并且获取第
 5. 接口中如果要使用用户信息，再从 session 中获取用户 ID，再到数据库中查询完整信息。
 
 用户第二次登录，则直接从第 5 步开始
+
+### 使用
+
+```
+npm install
+
+npm run debug
+```
+
+open url : http://localhost:7001
