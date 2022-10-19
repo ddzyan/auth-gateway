@@ -11,17 +11,17 @@
     "egg-passport": "^2.1.1",
     "egg-passport-github": "^1.0.0",
     "egg-passport-yuque": "^1.1.0",
-    "egg-scripts": "^2.11.0",
-    "egg-sequelize": "^5.2.2",
+    "egg-scripts": "^2.17.0",
+    "egg-sequelize": "^6.0.0",
     "moment": "^2.27.0",
     "mysql2": "^2.3.3"
   },
   "devDependencies": {
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
-    "egg-bin": "^4.11.0",
-    "egg-ci": "^1.11.0",
-    "egg-mock": "^3.21.0",
+    "egg-bin": "^5.2.0",
+    "egg-ci": "^2.1.0",
+    "egg-mock": "^5.0.2",
     "eslint": "^5.13.0",
     "eslint-config-egg": "^7.1.0",
     "sequelize-cli": "^6.2.0"
