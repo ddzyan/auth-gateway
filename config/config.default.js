@@ -30,10 +30,10 @@ module.exports = appInfo => {
   config.sequelize = {
     dialect: 'mysql', // 数据库类型
     host: '127.0.0.1',
-    port: 3306,
+    port: 13306,
     database: 'egg_auth',
-    username: 'test',
-    password: '123456',
+    username: 'root',
+    password: 'B9tiNZ7dXrk2qwr6',
     logging: (sql, timing) => {
       // 每次日志输出都会调用的函数，可以在此进行重写
       if (typeof timing === 'number' && timing > 500) {

@@ -13,7 +13,8 @@
     "egg-passport-yuque": "^1.1.0",
     "egg-scripts": "^2.11.0",
     "egg-sequelize": "^5.2.2",
-    "moment": "^2.27.0"
+    "moment": "^2.27.0",
+    "mysql2": "^2.3.3"
   },
   "devDependencies": {
     "autod": "^3.0.1",

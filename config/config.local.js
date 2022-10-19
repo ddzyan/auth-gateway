@@ -19,15 +19,6 @@ module.exports = () => {
     callbackURL: '/passport/yuque/callback',
   };
 
-  config.sequelize = {
-    dialect: 'mysql', // 数据库类型
-    host: '10.10.0.14',
-    port: 3306,
-    database: 'egg_auth',
-    username: 'test',
-    password: '123456',
-  };
-
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
